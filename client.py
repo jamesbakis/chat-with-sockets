@@ -2,8 +2,12 @@ import socket
 import threading
 from datetime import datetime
 import time
+import os
+from dotenv import load_dotenv
 
-HOST = '127.0.0.1'
+load_dotenv()
+
+HOST = os.getenv("IP")
 PORT = 5000
 
 _user = input("Enter a username: ")
