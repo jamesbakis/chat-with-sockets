@@ -33,6 +33,7 @@ def main():
                 print("Client disconnected.")
                 clients.remove(client)
                 client.close()
+                break
 
     def receive_connections():
         print(f"Server is running on port {PORT}...")
